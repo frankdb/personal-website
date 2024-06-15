@@ -126,12 +126,14 @@ export default function Navbar() {
                   >
                     Blog
                   </a>
-                  <Link
-                    href="/#"
-                    className="bg-gray-200 hover:bg-gray-700 hover:text-gray-200 text-gray-600 border-2 border-gray-200 hover:border-gray-700 rounded-md px-2 py-2 text-md font-semibold"
+                  <a
+                    href="https://www.linkedin.com/in/frankbarros/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-200 hover:bg-gray-700 hover:text-gray-200 text-gray-700 border-2 border-gray-200 hover:border-gray-700 rounded-md px-2 py-2 text-md font-semibold"
                   >
                     Let&apos;s talk
-                  </Link>
+                  </a>
                 </div>
               </div>
               {/* Notification bell icon */}
