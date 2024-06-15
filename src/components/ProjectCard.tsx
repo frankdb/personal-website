@@ -28,7 +28,7 @@ export default function ProjectCard({ projectData }: ProjectCardProps) {
   const { title, description, image, Icon } = projectData;
   return (
     <div className="group flex flex-col p-8 min-w-[260px] sm:min-w-[300px] max-w-[300px]">
-      <div className="relative rounded-lg bg-gray-700 h-56 w-72 cursor-pointer overflow-hidden">
+      <div className="relative rounded-lg bg-gray-700 h-44 w-60 md:h-52 md:w-64 cursor-pointer overflow-hidden">
         <img
           src={image}
           alt="project image"

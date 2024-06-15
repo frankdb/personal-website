@@ -19,7 +19,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section className="w-full bg-gray-900">
-      <div className="max-w-5xl mx-auto flex flex-row justify-start lg:flex-row items-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
+      <div className="max-w-5xl mx-auto flex flex-row justify-start lg:flex-row items-center gap-16 lg:gap-20 px-8 py-16 lg:py-20">
         <div className="flex flex-col items-start justify-center text-left text-gray-200 h-72">
           {/* <img
             className="w-16 h-16 rounded-full"
@@ -35,11 +35,11 @@ const Hero = () => {
                 transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 1 }}
                 style={{ display: "inline-block" }}
               >
-                👋
+                👋🏽
               </motion.span>
             </span>
           </h1>
-          <p className="text-lg opacity-80 leading-relaxed mt-8 w-96">
+          <p className="text-lg opacity-80 leading-relaxed mt-8 w-48 md:w-96">
             I&apos;m a full stack software engineer specializing in TypeScript,
             React and Node.
           </p>

@@ -10,10 +10,10 @@ export default function Navbar() {
   const [profileDropDown, setProfileDropDown] = useState(false);
   const pathname = usePathname();
 
-  const linkClassNames = (href: string) =>
-    pathname === href
-      ? "bg-green-600 text-white rounded-md px-3 py-2 text-md font-medium"
-      : "text-gray-600 hover:bg-green-600 hover:text-white rounded-md px-3 py-2 text-md font-medium";
+  // const linkClassNames = (href: string) =>
+  //   pathname === href
+  //     ? "bg-green-600 text-white rounded-md px-3 py-2 text-md font-medium"
+  //     : "text-gray-600 hover:bg-green-600 hover:text-white rounded-md px-3 py-2 text-md font-medium";
 
   const handleMobileLinkClick = () => {
     setMobileDropdown(false);
@@ -29,7 +29,7 @@ export default function Navbar() {
               {/* <!-- Mobile menu button--> */}
               <button
                 type="button"
-                className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onClick={() => setMobileDropdown(!mobileDropdown)}
@@ -239,40 +239,42 @@ export default function Navbar() {
           <div className="space-y-1 px-2 pb-3 pt-2">
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
             <Link
-              href="/jobs"
-              className="text-gray-600 hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              href="/#"
+              className="text-gray-600 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               aria-current="page"
               onClick={handleMobileLinkClick}
             >
-              Jobs
+              About
             </Link>
-            <Link
-              href="/talent"
-              className="text-gray-600 hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            <a
+              href="#projects"
+              className="text-gray-600 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               onClick={handleMobileLinkClick}
             >
-              Talent
-            </Link>
+              Projects
+            </a>
             <Link
-              href="/auth/login"
-              className="text-gray-600 hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              href="/#"
+              className="text-gray-600 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               onClick={handleMobileLinkClick}
             >
-              Login
+              Work
             </Link>
-            <Link
-              href="/auth/register"
-              className="text-gray-600 hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+            <a
+              href="https://xpboost.beehiiv.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               onClick={handleMobileLinkClick}
             >
-              Signup
-            </Link>
+              Blog
+            </a>
             <Link
-              href="/post-job"
-              className="text-gray-600 hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              href="/#"
+              className="text-gray-600 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               onClick={handleMobileLinkClick}
             >
-              Post Job
+              Contact
             </Link>
           </div>
         </div>

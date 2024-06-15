@@ -33,12 +33,12 @@ export default function Portfolio() {
   return (
     <section id="projects">
       <div className="w-full mx-auto bg-gray-700 py-16">
-        <div className="flex flex-col justify-center items-center max-w-7xl mx-auto">
+        <div className="flex flex-col justify-center items-center max-w-5xl mx-auto">
           <div className="text-center mb-2 text-gray-200">
             <div className="scroll-m-20 pb-2 text-4xl font-semibold tracking-tight first:mt-0">
               Projects 🎨
             </div>
-            <div className="max-w-3xl">
+            <div className="max-w-2xl lg:max-w-3xl">
               Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
               magnam voluptatum cupiditate veritatis in accusamus quisquam.
             </div>
