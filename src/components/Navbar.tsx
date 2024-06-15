@@ -130,7 +130,7 @@ export default function Navbar() {
                     href="/#"
                     className="bg-gray-200 hover:bg-gray-700 hover:text-gray-200 text-gray-600 border-2 border-gray-200 hover:border-gray-700 rounded-md px-2 py-2 text-md font-semibold"
                   >
-                    Let's talk
+                    Let&apos;s talk
                   </Link>
                 </div>
               </div>

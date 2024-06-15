@@ -14,7 +14,7 @@ const projectData = [
   {
     title: "Travel Itinerary Generator",
     description:
-      "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
+      "A collaborative text editor for generating travel itineraries, built with React, Vite, Node and MongoDB.",
     image: "/frank_logo.jpg",
     link: "/#",
     Icon: FaRegPaperPlane,
@@ -22,7 +22,7 @@ const projectData = [
   {
     title: "Real Time Analytics Dashboard",
     description:
-      "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
+      "A real time analytics dashboard for monitoring website traffic, built with React, Spring Boot and Postgres",
     image: "/frank_logo.jpg",
     link: "/#",
     Icon: FaChartLine,

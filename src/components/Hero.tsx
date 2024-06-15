@@ -27,7 +27,7 @@ const Hero = () => {
             alt="frank"
           /> */}
           <h1 className="font-extrabold text-5xl lg:text-6xl tracking-tight">
-            Hi, I'm Frank{" "}
+            Hi, I&apos;m Frank{" "}
             <span className="text-5xl align-top">
               <motion.span
                 initial={{ rotate: 0 }}
@@ -40,8 +40,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-lg opacity-80 leading-relaxed mt-8 w-96">
-            I'm a full stack software engineer specializing in TypeScript, React
-            and Node.
+            I&apos;m a full stack software engineer specializing in TypeScript,
+            React and Node.
           </p>
           <div className="flex flex-row space-x-4 mb-4 justify-between mt-8">
             <a
