@@ -21,9 +21,14 @@ export default function Footer() {
           <Link href="/#" className="text-gray-400 hover:text-gray-300">
             Contact
           </Link>
-          <Link href="/#" className="text-gray-400 hover:text-gray-300">
+          <a
+            href="https://blog.xpboost.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-gray-300"
+          >
             Blog
-          </Link>
+          </a>
           <a href="#projects" className="text-gray-400 hover:text-gray-300">
             Projects
           </a>

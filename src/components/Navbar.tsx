@@ -119,7 +119,7 @@ export default function Navbar() {
                     Work
                   </Link>
                   <a
-                    href="https://xpboost.beehiiv.com"
+                    href="https://blog.xpboost.dev"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-200 hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
@@ -261,7 +261,7 @@ export default function Navbar() {
               Work
             </Link>
             <a
-              href="https://xpboost.beehiiv.com"
+              href="https://blog.xpboost.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
