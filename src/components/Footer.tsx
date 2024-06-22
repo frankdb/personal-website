@@ -7,7 +7,7 @@ import { FaGithub, FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className="bg-gray-900 py-8">
+    <div className="bg-background py-8">
       {/* Divider */}
       {/* <div className="w-full flex justify-center my-8">
         <div className="border-t border-gray-200 w-11/12"></div>
@@ -40,7 +40,7 @@ export default function Footer() {
             href="https://github.com/frankdb"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+            className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
           >
             <FaGithub size={24} />
           </a>
@@ -48,7 +48,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/frankbarros/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+            className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
           >
             <FaLinkedin size={24} />
           </a>
@@ -56,7 +56,7 @@ export default function Footer() {
             href="https://x.com/xpboostdev"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+            className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
           >
             <FaSquareXTwitter size={24} />
           </a>

@@ -18,9 +18,9 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-gray-900">
+    <section className="w-full bg-background">
       <div className="max-w-5xl mx-auto flex flex-row justify-start lg:flex-row items-center gap-16 lg:gap-20 px-8 py-16 lg:py-20">
-        <div className="flex flex-col items-start justify-center text-left text-gray-200 h-72">
+        <div className="flex flex-col items-start justify-center text-left text-foreground h-72">
           {/* <img
             className="w-16 h-16 rounded-full"
             src="/frank_logo.jpg"
@@ -48,7 +48,7 @@ const Hero = () => {
               href="https://github.com/frankdb"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+              className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
             >
               <FaGithub size={24} />
             </a>
@@ -56,7 +56,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/frankbarros/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+              className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
             >
               <FaLinkedin size={24} />
             </a>
@@ -64,7 +64,7 @@ const Hero = () => {
               href="https://x.com/xpboostdev"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+              className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
             >
               <FaSquareXTwitter size={24} />
             </a>

@@ -32,15 +32,16 @@ const projectData = [
 export default function Portfolio() {
   return (
     <section id="projects">
-      <div className="w-full mx-auto bg-gray-700 py-16">
+      <div className="w-full mx-auto bg-background-secondary py-16">
         <div className="flex flex-col justify-center items-center max-w-5xl mx-auto">
-          <div className="text-center mb-2 text-gray-200">
+          <div className="text-center mb-2 text-foreground">
             <div className="scroll-m-20 pb-2 text-4xl font-semibold tracking-tight first:mt-0">
               Projects 🎨
             </div>
             <div className="max-w-2xl lg:max-w-3xl">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              Building cool things is why I got into coding in the first place.
+              There is nothing more fun than seeing your creations come to life.
+              Some of these are still in progress!
             </div>
           </div>
 

@@ -19,7 +19,7 @@ interface IconProps {
 const IconWrapper: React.FC<{ Icon: React.ComponentType<IconProps> }> = ({
   Icon,
 }) => (
-  <div className="absolute inset-0 bg-gray-600 flex items-center justify-center transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+  <div className="absolute inset-0 text-card-foreground flex items-center justify-center transition-opacity duration-300 opacity-100 group-hover:opacity-0">
     <Icon size={48} />
   </div>
 );
@@ -28,7 +28,7 @@ export default function ProjectCard({ projectData }: ProjectCardProps) {
   const { title, description, image, Icon } = projectData;
   return (
     <div className="group flex flex-col p-8 min-w-[260px] sm:min-w-[300px] max-w-[300px]">
-      <div className="relative rounded-lg bg-gray-700 h-44 w-60 md:h-52 md:w-64 cursor-pointer overflow-hidden">
+      <div className="relative rounded-lg bg-muted h-44 w-60 md:h-52 md:w-64 cursor-pointer overflow-hidden">
         <img
           src={image}
           alt="project image"
@@ -36,7 +36,7 @@ export default function ProjectCard({ projectData }: ProjectCardProps) {
         />
         <IconWrapper Icon={Icon} />
       </div>
-      <div className="flex flex-col mt-3 text-gray-300">
+      <div className="flex flex-col mt-3 text-muted-foreground">
         <div className="text-sm font-semibold">{title}</div>
         <div className="text-sm">{description}</div>
       </div>
