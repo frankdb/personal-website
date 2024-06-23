@@ -18,6 +18,7 @@ const projectData = [
     image: "/frank_logo.jpg",
     link: "/#",
     Icon: FaRegPaperPlane,
+    underConstruction: true,
   },
   {
     title: "Real Time Analytics Dashboard",
@@ -26,25 +27,27 @@ const projectData = [
     image: "/frank_logo.jpg",
     link: "/#",
     Icon: FaChartLine,
+    underConstruction: true,
   },
 ];
 
 export default function Portfolio() {
   return (
     <section id="projects">
-      <div className="w-full mx-auto bg-gray-700 py-16">
+      <div className="w-full mx-auto bg-background-secondary py-16">
         <div className="flex flex-col justify-center items-center max-w-5xl mx-auto">
-          <div className="text-center mb-2 text-gray-200">
+          <div className="text-center mb-2 text-foreground">
             <div className="scroll-m-20 pb-2 text-4xl font-semibold tracking-tight first:mt-0">
               Projects 🎨
             </div>
-            <div className="max-w-2xl lg:max-w-3xl">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+            <div className="mx-auto w-3/4 text-sm sm:text-base leading-snug sm:leading-normal max-w-2xl lg:max-w-3xl">
+              Being able to build cool things is why I got into coding in the
+              first place. There is nothing more fun than seeing your creations
+              come to life. Note: some of these are still in progress.
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 sm:gap-4 sm:my-4">
             {projectData.map((data) => (
               <ProjectCard key={data.title} projectData={data} />
             ))}

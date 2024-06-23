@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { MdOutlineHandshake } from "react-icons/md";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
   const [mobileDropdown, setMobileDropdown] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-gray-900">
+      <nav className="bg-background">
         <div className="mx-auto max-w-5xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             {/* Mobile menu */}
@@ -98,23 +99,24 @@ export default function Navbar() {
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
+                  <ModeToggle />
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                   <a
                     href="#about"
-                    className="text-gray-200 hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
+                    className="text-foreground hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
                     aria-current="page"
                   >
                     About
                   </a>
                   <a
                     href="#projects"
-                    className="text-gray-200 hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
+                    className="text-foreground hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
                   >
                     Projects
                   </a>
                   <Link
                     href="/#"
-                    className="text-gray-200 hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
+                    className="text-foreground hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
                   >
                     Work
                   </Link>
@@ -122,7 +124,7 @@ export default function Navbar() {
                     href="https://blog.xpboost.dev"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-200 hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
+                    className="text-foreground hover:bg-gray-300 hover:text-gray-700 rounded-md px-3 py-2 text-md font-medium"
                   >
                     Blog
                   </a>
@@ -130,7 +132,7 @@ export default function Navbar() {
                     href="https://www.linkedin.com/in/frankbarros/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-200 hover:bg-gray-700 hover:text-gray-200 text-gray-700 border-2 border-gray-200 hover:border-gray-700 rounded-md px-2 py-2 text-md font-semibold"
+                    className="bg-primary text-primary-foreground rounded-md px-2 py-2 text-md font-semibold"
                   >
                     Let&apos;s talk
                   </a>

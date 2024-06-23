@@ -1,34 +1,17 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "./ui/button";
-import { HandMetal } from "lucide-react";
-import {
-  FaFacebook,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaRegHandPeace,
-  FaSquareXTwitter,
-  FaTwitter,
-} from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-gray-900">
-      <div className="max-w-5xl mx-auto flex flex-row justify-start lg:flex-row items-center gap-16 lg:gap-20 px-8 py-16 lg:py-20">
-        <div className="flex flex-col items-start justify-center text-left text-gray-200 h-72">
-          {/* <img
-            className="w-16 h-16 rounded-full"
-            src="/frank_logo.jpg"
-            alt="frank"
-          /> */}
-          <h1 className="font-extrabold text-5xl lg:text-6xl tracking-tight">
+    <section className="w-full bg-background">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-start lg:flex-row items-center gap-2 sm:gap-16 lg:gap-20 py-4 px-8 md:py-16 lg:py-20">
+        <div className="flex flex-col items-start justify-center text-left text-foreground h-72">
+          <h1 className="font-extrabold text-4xl sm:text-5xl tracking-tight">
             Hi, I&apos;m Frank{" "}
-            <span className="text-5xl align-top">
+            <span className="text-4xl sm:text-5xl align-top">
               <motion.span
                 initial={{ rotate: 0 }}
                 animate={{ rotate: [0, 15, -15, 15, -15, 0] }}
@@ -39,7 +22,7 @@ const Hero = () => {
               </motion.span>
             </span>
           </h1>
-          <p className="text-lg opacity-80 leading-relaxed mt-8 w-48 md:w-96">
+          <p className="text-base sm:text-lg opacity-80 leading-snug md:leading-normal mt-8 w-3/4 md:w-96">
             I&apos;m a full stack software engineer specializing in TypeScript,
             React and Node.
           </p>
@@ -48,7 +31,7 @@ const Hero = () => {
               href="https://github.com/frankdb"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+              className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
             >
               <FaGithub size={24} />
             </a>
@@ -56,7 +39,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/frankbarros/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+              className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
             >
               <FaLinkedin size={24} />
             </a>
@@ -64,7 +47,7 @@ const Hero = () => {
               href="https://x.com/xpboostdev"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition duration-100 ease-in-out transform hover:scale-110 text-gray-200 hover:text-gray-300"
+              className="transition duration-100 ease-in-out transform hover:scale-110 text-foreground hover:text-foreground"
             >
               <FaSquareXTwitter size={24} />
             </a>
@@ -75,16 +58,15 @@ const Hero = () => {
             </Button>
           </Link> */}
         </div>
-        {/* <div className="lg:w-full flex items-center justify-center">
-          <Image
-            src="/office_worker.jpg"
+        <div className="lg:w-full flex items-center justify-center">
+          <img
+            src="/pilot.png"
             alt="Filipino office worker"
-            width={500}
-            height={500}
-            className="md:rounded-md"
-            priority={true}
+            // width={400}
+            // height={400}
+            className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
           />
-        </div> */}
+        </div>
       </div>
     </section>
   );
